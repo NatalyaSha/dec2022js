@@ -152,6 +152,8 @@ switch (weeksday) {
     case '7':
         console.log('sunday');
         break;
+    default:
+        console.log('wrong');
 }
 
 // - Користувач вводить або має два числа.
@@ -194,7 +196,7 @@ if (coursesAndDurationArray[1].monthDuration > 5) {
     console.log('super');
 }else if (coursesAndDurationArray[5].monthDuration > 5){
     console.log('super');
-}else if (coursesAndDurationArray[0].monthDuration > 5){
+}else if (coursesAndDurationArray[0].monthDuration < 5){
     console.log('no super');
 }
 
