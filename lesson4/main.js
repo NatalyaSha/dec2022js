@@ -39,7 +39,7 @@ function boom (arr) {
         console.log(arrElement);
     }
 }
- boom (users);
+boom (users);
 
 // - створити функцію яка створює параграф з текстом. Текст задати через аргумент
 
@@ -139,7 +139,7 @@ console.log(array4);
 // - Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
 // Приклад exchange(10000,[{currency:'USD',value:40},{currency:'EUR',value:42}],'USD') // => 250
 function exchange(sumUAH,currencyValues,exchangeCurrency) {
-let exchangeValue = 0;
+    let exchangeValue = 0;
     for (let value of currencyValues) {
         if (value.currency === exchangeCurrency) {
             exchangeValue = value.value;
@@ -148,17 +148,3 @@ let exchangeValue = 0;
     return sumUAH/exchangeValue;
 }
 console.log(exchange(1000, [{currency:'USD',value:40},{currency:'EUR',value:42}],'USD'));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
