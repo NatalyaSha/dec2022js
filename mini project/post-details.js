@@ -33,6 +33,7 @@ let url2 = new URL(`https://jsonplaceholder.typicode.com/posts/${post.id}/commen
 fetch(url2)
     .then(value => value.json())
     .then(coments => {
+
         for (const coment of coments) {
             let div = document.createElement('div');
             div.classList.add('coment');
@@ -55,6 +56,7 @@ fetch(url2)
 
             div.append(postid, id, name, email, body);
             document.body.appendChild(div);
+
         }
 
     })

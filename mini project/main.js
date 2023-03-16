@@ -15,8 +15,13 @@ fetch(url)
             div.style.fontSize = '20px';
             let a = document.createElement('a');
             a.innerText = `${user.id} ${user.name}`;
-            a.href = 'user-details.html?data=' + JSON.stringify(user);
-            div.appendChild(a);
+            let button = document.createElement('button');
+            button.classList.add('button');
+            button.innerText ='User Details';
+            button.addEventListener('click', function()  {
+                window.location.href = 'user-details.html?data=' + JSON.stringify(user)
+            });
+            div.append(a, button);
             document.body.appendChild(div);
         }
     })
